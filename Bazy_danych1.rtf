@@ -63,3 +63,16 @@ GRANT DELETE,UPDATE ON Oskar_Topolewicz.TelefonyUczniow TO 'O_T'@'localhost';
 SHOW GRANTS FOR O_T@localhost;
 (Może)
 
+19. Użytkownikowi o nazwie zgodnej z własnym imieniem i nazwiskiem nadaj uprawnienie do tworzenia
+nowych tabel w bazie danych Imie_Nazwisko
+GRANT DELETE,UPDATE ON Oskar_Topolewicz.TelefonyUczniow TO 'O_T'@'localhost';
+
+20. Sprawdź czy użytkownik może korzystać z tych uprawnień
+SHOW GRANTS FOR O_T@localhost;
+(Może)
+
+21. Sprawdź uprawnienia nowego użytkownika
+SHOW GRANTS FOR O_T@localhost;
+
+22. Zabierz uprawnienie do usuwania danych
+REVOKE DELETE ON Oskar_Topolewicz.* from O_T@localhost;
